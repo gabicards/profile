@@ -7,21 +7,7 @@ body {
   margin: 20px auto;
 }
 
-.cards {
-  background-color: #fff;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-h1 {
-  color: #4D455D;
-  font-family: "Oldenburg", serif;
-  font-weight: 400;
-  font-style: normal;
-  margin-left: 120px;
-}
-
-h2 {
+h1, h2 {
   color: #4D455D;
   font-family: "Oldenburg", serif;
   font-weight: 400;
@@ -38,10 +24,28 @@ b, strong {
   color: #E96479;
 }
 
+.cards {
+  background-color: #fff;
+  padding: 6%;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.1);
+}
+
 .header-img {
   width: 150px;
   float: left;
-  margin: 30px 30px 10px 30px;
+  margin: 3% 5% 3% 0;
+  box-shadow: 1px 1x 0px 1px rgba(233,100,121,1);
+  -webkit-box-shadow: 1px 1px 0px 1px rgba(233,100,121,1);
+  -moz-box-shadow: 1px 1px 0px 1px rgba(233,100,121,1);
+
+  /* Media query for mobile screens */
+  @media only screen and (max-width: 768px) {
+    float: none; /* Remove float */
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Ensure it's displayed as a block element */
+  }
 }
 
 .img-circle {
@@ -61,6 +65,7 @@ b, strong {
 .list-inline {
   list-style: none;
   margin-top: 12px;
+  padding: 0;
 }
 
 .list-inline > li {
@@ -71,8 +76,10 @@ footer {
   width: 50%;
   background-color: #fff;
   margin: 20px auto;
-  padding: 20px;
+  padding: 2%;
   box-sizing: border-box;
+  -webkit-box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
